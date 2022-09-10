@@ -12,7 +12,7 @@ see <https://www.gnu.org/licenses/>.
 '''
 
 def argument_parser():
-    parser = argparse.ArgumentParser(description = "Script to create a base64 Powershell one-liner")
+    parser = argparse.ArgumentParser(description = "Creates a base64 Powershell one-liner given plaintext input")
     parser.add_argument("-c", type = str, help = "Plaintext command to base64 encode", required = False)
     parser.add_argument("--command", type = str, help = "Plaintext command to base64 encode", required = False)
     parser.add_argument("-f", type = str, help = "File including command to base64 encode", required = False)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import base64
 
 '''
 This program is free software: you can redistribute it and/or modify it under the terms of the 

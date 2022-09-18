@@ -26,7 +26,7 @@ def argument_parser():
 def main():
     args = argument_parser()
 
-    powershell_launcher_string = "powershell.exe -version 2 -exec bypass -enc "
+    powershell_launcher_string = "powershell.exe -version 2 -nop -exec bypass -enc "
 
     if args.c or args.command:
         powershell_encoded_string = powershell_launcher_string + base64.b64encode(args.c.encode("UTF-16LE")).decode("utf-8")

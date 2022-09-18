@@ -1,4 +1,4 @@
-# Powershell-Encoder
+# Powershell Encoder
 
 ## Description
 

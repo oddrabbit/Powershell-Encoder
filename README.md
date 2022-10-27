@@ -6,6 +6,17 @@ Script to make Powershell base64 one-liners. 👨‍💻 👩‍💻
 
 ## Download and Execution
 
+### Docker
+
+```
+git clone https://github.com/oddrabbit/Powershell-Encoder.git
+cd Powershell-Encoder/
+chmod +x ./docker-run.sh
+./docker-run.sh
+```
+
+### Manual
+
 ```
 git clone https://github.com/oddrabbit/Powershell-Encoder.git
 cd Powershell-Encoder/

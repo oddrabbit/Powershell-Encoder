@@ -28,12 +28,17 @@ def main():
 
     powershell_launcher_string = "powershell.exe -version 2 -nop -exec bypass -enc "
 
-    if args.c or args.command:
+    if args.c:
         powershell_encoded_string = powershell_launcher_string + base64.b64encode(args.c.encode("UTF-16LE")).decode("utf-8")
         print(powershell_encoded_string)
         quit()
 
-    if args.f:
+    elif args.command:
+        powershell_encoded_string = powershell_launcher_string + base64.b64encode(args.command.encode("UTF-16LE")).decode("utf-8")
+        print(powershell_encoded_string)
+        quit()
+
+    elif args.f:
         file_handler = open(args.f, "r")
         file_handler_content = file_handler.readlines()
         file_handler_content = "\n".join(str(i) for i in file_handler_content)
